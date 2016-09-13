@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">"
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Order Our Services Here</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1>Order Custom Goods &amp; Services</h1>
+          <h2>Fill out form below to request <em> anything </em> you desire.</h2>
+        </div>
+
+        <div id="blanks">
+          <form>
+            <div class="form-group">
+              <label for="cusname">Enter your name as it appears on your credit card:</label>
+              <input id="cusname" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="shippingaddress">Enter the address where you'd like to receive your goods and/or services:</label>
+              <input id="shippingaddress" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="cardnumber">Enter your credit card number:</label>
+              <input id="cardnumber" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Enter your email:</label>
+              <input id="email" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="goods">Describe the goods you would like to order:</label>
+              <input id="goods" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="services">Describe the services you would like to order:</label>
+              <input id="services" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+              <label>What is your favorite color?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="favcolor" value="Pink" checked>
+                  Pink
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="favcolor" value="Yellow" checked>
+                  Yellow
+                </label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="favcolor" value="Green" checked>
+                  Green
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="favcolor" value="Grey" checked>
+                  Grey
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Order now!</button>
+          </form>
+        </div>
+
+        <div id="invoice">
+          <div class="jumbotron">
+            <h1>Thank You for Your Order</h1>
+            <h3>The details of your order are below.</h3>
+            <p><em>Are you sure this is what you want?</em></p>
+            <button type="yes" class="btn">Yes!</button>
+            <button type="no" class="btn">No...</button>
+          </div>
+
+          <div id="details">
+            <h2>Your Name: <span class="cusname"></span></h2>
+            <h2>Your Address: <span class="shippingaddress"></span></h2>
+            <h2>Your Card Number: <span class="cardnumber"></span></h2>
+            <h2>Your Email Address: <span class="email"></span></h2>
+            <h2>Goods requested: <span class="goods"></span></h2>
+            <h2>Services requested: <span class="services"></span></h2>
+          </div>
+
+
+        </div>
+
+    </div>
+
+  </body>
+
+</html>
